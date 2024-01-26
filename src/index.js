@@ -3,6 +3,7 @@ const app = express();
 const port = 1100;
 
 import mongoose from "mongoose";
+import bookRouter from "./routes/bookRoute";
 
 main().catch((err) => console.log(err));
 
@@ -13,6 +14,8 @@ async function main() {
 app.get("/", (req, res) => {
   res.send("Ça marche (normalement)");
 });
+
+app.use("/books", bookRouter);
 
 app.listen(port, () => {
   console.log(`Running on: http://localhost:${port}/`);

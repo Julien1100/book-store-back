@@ -1,0 +1,49 @@
+Qu'est ce qu'un book store ?
+1. Liste de livres
+
+Qu'est-ce qu'un livre et son modèle ?
+- Titre
+- Auteur
+- Date de publication
+- Genres (plusieurs)
+- Synopsis
+- Nombre de pages
+
+Quel est le contexte du book store ? Les fonctionnalités ?
+1. Librairie de livres, les utilisateurs ajoute les livres dans leur liste de favoris.
+
+Pages du site :
+  - HomePage
+    - Liste des livres avec miniature
+      - Informations sur le livre
+      - Minitarure plus grande
+      - Mise en favoris
+  - Page de l'utilisateur
+  - Connexion / Création compte
+
+De quoi avons-nous besoins (stack) :
+  ✔ Express @done(24-01-26 11:18)
+  ✔ Mongoose @done(24-01-26 11:18)
+  ✔ Backpack (pourquoi ? -> ES6) @done(24-01-26 11:18)
+  ✔ Volleyball @done(24-01-26 11:18)
+  ✔ CORS @done(24-01-26 11:18)
+  ✔ JWT @done(24-01-26 11:18)
+  ✔ Bcryptjs @done(24-01-26 11:18)
+
+Configuration starter :
+  ✔ Créer dossier src @started(24-01-26 11:23) @done(24-01-26 11:23) @lasted(39s)
+  ✔ Créer .babelrc @done(24-01-26 11:23)
+  ✔ Ajouter script dans package.json @done(24-01-26 11:23)
+
+Étape 1:
+  (MVC)
+  -> Model = database = MongoDB = Mongoose
+  ✔ Importer Mongoose @done(24-01-26 11:45)
+  -> Model donc besoin d'un Schema
+  ✔ Implémenter le modèle de livre @started(24-01-26 11:45) @done(24-01-26 11:56) @lasted(11m31s)
+
+Étape 2:
+  ☐ Créer le controller:
+    ☐ Importer le model
+    ☐ Créer la première fonctionnalité : getAllBooks
+  -> à quoi ca sert ? Détermine où va le model. C'est l'intelligence du model, le cerveau.
